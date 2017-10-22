@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebRTC</title>
+    <script type="text/javascript" src="modernizr.min.js"></script>
+  </head>
+  <style type="text/css">
+    body {
+      background-color: #ddd;
+      margin-top: 15px;
+    }
+    video: {
+      background: black;
+      border: 1px solid gray;
+    }
+
+    #container {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      width: 500px;
+      height: 500px;
+    }
+
+    #yours {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+    }
+
+    #theirs {
+      width: 500px;
+      height: 500px;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <video id="yours" autoplay></video>
+      <video id="theirs" autoplay></video>
+    </div>
+    <script type="text/javascript" src="client.js">
+    </script>
+  </body>
+</html>
