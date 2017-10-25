@@ -97,7 +97,7 @@ function startPeerConnection(stream) {
             theirConnection.setLocalDescription(offer);
             yourConnection.setRemoteDescription(offer);
         }, function (error) {
-            consol.log(error);
+            console.log(error);
         });
     }, function (error) {
         console.log(error);
